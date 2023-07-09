@@ -14,13 +14,11 @@
 
 ## Database & Migration
 
-Get Postgres Image： 
+Get Postgres Image： `docker pull postgres` 
 
-`docker pull postgres` 
+Get golang migrate：  `brew install golang-migrate`
 
-Get golang migrate：
-
-`brew install golang-migrate`
+Get sqlc: ` brew install sqlc` [Config site](https://docs.sqlc.dev/en/latest/reference/config.html)
 
 Create migration files：
 
@@ -30,10 +28,7 @@ Run Makefile scripts：
 
 `make postgres`
 `make createdb`
-
-Migrate db files：
-`migrate -path db/migration -database "postgresql://root:myPW@localhost:5432/simple_bank?sslmode=disable" -verbose up`
-
+`make migrateup`
 
 	
 
