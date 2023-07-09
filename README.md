@@ -12,7 +12,12 @@
 ## Database Design
 ![DBdesign](https://i.imgur.com/HtPnnm6.png)
 
-## Database & Migration
+<details>
+
+<summary>
+<h2>Database & Migration</h2>
+
+</summary>
 
 Get Postgres Image： `docker pull postgres` 
 
@@ -26,9 +31,19 @@ Create migration files：
 
 Run Makefile scripts：
 
-`make postgres`
-`make createdb`
-`make migrateup`
+`make postgres` to run postgres databse
+
+`make createdb` to create databse 
+
+`make migrateup` to migrate
+
+`make sqlc` to generate query functions
+
+
+</details>
+
+
+
 
 	
 
