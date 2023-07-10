@@ -1,14 +1,30 @@
 # An simple bank server
 
-### Tech stack
-* Postgres 
-* SQLc
-* Gin
-* RestAPI
-* JWT
-* Docker
-* K8s
+## Tech stack
 
+<style>
+    .two-column-list {
+        column-count: 2;
+        column-gap: 20px;
+    }
+</style>
+
+<div class="two-column-list">
+    <ul>
+        <li>Postgres</li>
+        <li>SQLc</li>
+        <li>Gin</li>
+        <li>RestAPI</li>
+        <li>JWT</li>
+    </ul>
+    <ul>
+        <li>Docker</li>
+        <li>K8s</li>
+        <li>CI/CD</li>
+        <li>GitHub Action</li>
+        <li>TDD</li>
+    </ul>
+</div>
 ## Database Design
 ![DBdesign](https://i.imgur.com/HtPnnm6.png)
 
@@ -41,6 +57,12 @@ Run Makefile scripts：
 
 
 </details>
+
+
+## Testing
+
+
+
 
 
 
