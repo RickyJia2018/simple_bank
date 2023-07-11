@@ -7,7 +7,6 @@ package db
 
 import (
 	"context"
-	"database/sql"
 )
 
 const createEntry = `-- name: CreateEntry :one
@@ -21,7 +20,7 @@ RETURNING id, account_id, amount, created_at
 `
 
 type CreateEntryParams struct {
-	AccountID sql.NullInt64
+	AccountID int64
 	Amount    int64
 }
 
@@ -116,7 +115,7 @@ RETURNING id, account_id, amount, created_at
 type UpdateEntryParams struct {
 	ID        int64
 	Amount    int64
-	AccountID sql.NullInt64
+	AccountID int64
 }
 
 func (q *Queries) UpdateEntry(ctx context.Context, arg UpdateEntryParams) (Entry, error) {

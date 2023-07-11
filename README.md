@@ -61,7 +61,7 @@ Run Makefile scripts：
 
 ## Testing
 
-
+Run: `make test`
 
 
 
