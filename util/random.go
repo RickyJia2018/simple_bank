@@ -35,7 +35,7 @@ func RandomOwner() string {
 }
 
 func RandomMoney() int64 {
-	return RandomInt(0, 999999)
+	return RandomInt(0, 1000)
 }
 
 func RandomCurrentcy() string {
