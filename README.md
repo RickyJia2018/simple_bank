@@ -21,7 +21,7 @@
 
 Get Postgres Image： `docker pull postgres` 
 
-Get golang migrate：  `brew install golang-migrate`
+Get golang migrate：  `brew install golang-migrate` [Config site](https://github.com/golang-migrate/migrate.git)
 
 Get sqlc: ` brew install sqlc` [Config site](https://docs.sqlc.dev/en/latest/reference/config.html)
 
@@ -47,6 +47,7 @@ Run Makefile scripts：
 
 Run: `make test`
 
+Import: `github.com/stretchr/testify/require` to use require.*
 
 
 

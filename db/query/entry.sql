@@ -16,13 +16,3 @@ SELECT * FROM entries
 ORDER BY id = $1
 LIMIT $2
 OFFSET $3;
-
--- name: UpdateEntry :one
-UPDATE entries
-SET amount = $2, account_id = $3
-WHERE id = $1
-RETURNING *;
-
--- name: DeleteEntry :exec
-DELETE FROM entries
-WHERE id = $1;
