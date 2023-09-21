@@ -55,3 +55,33 @@ Run: `make test`
 
 
 
+## gRPC
+1. install [protobuf compiler & go plugins](https://grpc.io/docs/languages/go/quickstart/)
+2. vscode install proto3 plugin
+3. Update proto3 setting with 
+
+	```js
+	"protoc":{
+		"options":[ "--proto_path=proto",]
+	}
+	```
+4. create .proto files in proto
+5. generate proto files
+
+	```
+	rm -f pb/*.go
+	protoc --proto_path=proto --go_out=pb --go_opt=paths=source_relative \
+    --go-grpc_out=pb --go-grpc_opt=paths=source_relative \
+    proto/*.proto
+    ```
+6. run go mod tidy
+7. brew install evans
+8. run `evans --host localhost --port 9090 -r repl`
+	
+	```
+	show service
+	call my-RPC-api
+	```
+    
+ 
+ 
